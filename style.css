@@ -1,0 +1,75 @@
+/* General Page Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Black background */
+    color: #fff; /* Default white text color */
+    text-align: center; /* Center align all text */
+}
+
+/* Main Styling */
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+    padding: 20px;
+}
+
+/* Text Styles */
+.small-red {
+    color: #e50914; /* Red text */
+    font-size: 1.5rem; /* Small text */
+    margin: 0;
+}
+
+.large-red {
+    color: #e50914; /* Red text */
+    font-size: 3rem; /* Large text */
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.xsmall-red {
+    color: #e50914; /* Red text */
+    font-size: 1rem; /* Extra small text */
+    margin: 0;
+}
+
+.description {
+    color: #fff; /* White text */
+    font-size: 1.5rem; /* Medium text */
+    max-width: 800px;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+/* Spacer */
+.spacer {
+    margin: 20px 0; /* Adds space between the heading and description */
+}
+
+/* Fade-in Animation */
+@keyframes fadeInTopToBottom {
+    0% {
+        opacity: 0; /* Completely transparent */
+        transform: translateY(-50px); /* Slightly move upward */
+    }
+    100% {
+        opacity: 1; /* Fully visible */
+        transform: translateY(0); /* Back to the original position */
+    }
+}
+
+.fade-in {
+    animation: fadeInTopToBottom 1.5s ease-out forwards; /* Add 'forwards' to keep the final state */
+    opacity: 0; /* Start with invisible for animation */
+}
+
+/* Image Styling */
+img {
+    max-width: 200px; /* Adjust size as needed */
+    margin-top: 10px;
+}
